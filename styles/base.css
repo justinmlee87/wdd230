@@ -37,9 +37,13 @@
     padding: 2rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: #888;
     font-size: 30px;
 
+  }
+
+  a {
+    color: #a9a9fe;
   }
   
   
@@ -93,7 +97,7 @@
   }
   
   footer {
-    background: rgb(17, 0, 255);
+    background-color: #a9a9fe;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 3;
