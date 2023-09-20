@@ -12,7 +12,7 @@
     background-color: #a9a9fe;
     padding: 2rem;
     display: flex;
-    align-items: center;
+  
 
 
   }
@@ -21,12 +21,14 @@
     padding-left: 40px;
     font-family:'Times New Roman', Times, serif;
     color: black;
+    align-content: center;
+    padding-top: 50px;
   }
 
   img {
     width: 200px;
     height: 200px;
-    margin-left: 200px;
+    margin-left: 30px;
     
   }
     
@@ -38,12 +40,20 @@
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #888;
-    font-size: 30px;
+    font-size: 20px;
+    width: 100%;
 
   }
 
   a {
     color: #a9a9fe;
+    text-align: center;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+  nav :hover {
+    border: 2px solid white;
   }
   
   
@@ -56,25 +66,34 @@
     margin: auto;
     display: grid;
     
+    
   }
   h3 {
     text-align: center;
     background-color: orangered;
     border-radius: 10px;
+    margin-top: 0%;
+    margin-bottom: auto;
+    justify-content: space-between;
+  }
+
+  h3#information {
+    margin-bottom: 0%;
   }
   h2 {
-    text-align: center;
     border-bottom:1px solid #888;
     color: rgb(37, 37, 39);
   }
 
   ul#Learning {
     list-style-type: none;
+  
   }
   ul#Information {
     list-style-type: none;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
   }
   ul#paragraph {
     list-style-type: none;
@@ -90,11 +109,7 @@
   }
   
   
-  aside {
-    background: yellow;
-    grid-column: 2 / 3;
-    padding: 1rem;
-  }
+
   
   footer {
     background-color: #a9a9fe;

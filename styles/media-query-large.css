@@ -1,0 +1,18 @@
+@media (max-width: 800px) {
+
+    nav a {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+
+  
+
+
+
+    
+}
