@@ -50,6 +50,14 @@
     text-align: center;
     justify-content: space-around;
     margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  li {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
   }
 
   nav :hover {
@@ -87,12 +95,15 @@
 
   ul#Learning {
     list-style-type: none;
+
   
   }
+
   ul#Information {
     list-style-type: none;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
     
   }
   ul#paragraph {
@@ -103,6 +114,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 10px;
+    background-color: black;
+  
   }
   .card :hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -112,11 +125,11 @@
 
   
   footer {
-    background-color: #a9a9fe;
+    background-color: black;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 3;
-    color: black;
+    color: white;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     writing-mode: horizontal-tb;
