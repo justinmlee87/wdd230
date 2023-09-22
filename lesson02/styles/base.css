@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box; 
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1/3;
+    grid-template-rows: 1/3;
+}
+
+header {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ACC8E5;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: #ACC8E5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+  }
+
+ .cards{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: white;
+    color: white;
+    grid-row: 1;
+    margin-inline: 10px;
+    justify-self: auto;
+    grid-column: 1;
+ }
+
+ .card{
+    flex: 0 1 24%;
+    background-color: black;
+    
+ }
+
+  img {
+    width: 300px;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+    
+  }
+
+  h2 {
+    text-align: center;
+    background-color: #ACC8E5;
+    color: black;
+    margin-top: 0%;
+    margin-bottom: auto;
+    justify-content: space-between;
+  }
+
+  main {
+    background: white;
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    
+    
+  }
+
+  p {
+    text-align: center;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    
+  }
+
+  h3 {
+    padding-left: 35px;
+  }
+
+  a {
+    color: #ACC8E5;
+  }
+
+
+
+
