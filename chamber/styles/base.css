@@ -7,13 +7,41 @@ title{
     display: none;
 }
 
+
+
+
 nav {
+    display: flex;
     background-color: gold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     width: 100%;
     justify-content: center;
+    overflow: auto;
 }
+.navigation{
+    display: flex;
+    
+
+}
+
+.navigation li a {
+        float: left;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%;
+        text-align: center;
+        margin-right: 150px;
+}
+
+.navigation :hover{
+    background-color: purple;
+    color: white;
+}
+  
+
 
 li {
     color: white;
@@ -62,7 +90,7 @@ h1:hover {
     cursor: pointer
 }
 .hero-text button:hover {
-    background-color: gold;
+    background: -webkit-linear-gradient( gold, purple);
     color: black;
 }
 
@@ -75,6 +103,8 @@ h1:hover {
     border-radius: 10px;
     margin-top: 10px;
     color: white;
+    margin-left: 10px;
+    margin-right: 10px;
   
   }
   .card :hover{
