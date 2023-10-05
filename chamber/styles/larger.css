@@ -1,5 +1,16 @@
 @media (max-width: 800px) {
 
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    .card {
+        flex: 0 1 24%;
+
+    }
 
     .hero-text {
         margin-right: 200px;
