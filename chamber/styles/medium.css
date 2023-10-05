@@ -1,7 +1,13 @@
 @media (min-width: 800px) {
 
 
+#menu {
+    display: none;
+}
 
+.hero-text{
+    margin-right: 200px;
+}
 
 
 

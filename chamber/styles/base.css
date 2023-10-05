@@ -16,14 +16,14 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     width: 100%;
-    justify-content: center;
-    overflow: auto;
+    justify-content: space-around;
+    border-radius: 10px;
+
 }
 .navigation{
     display: flex;
-    
-
 }
+
 
 .navigation li a {
         float: left;
@@ -33,7 +33,7 @@ nav {
         font-size: 17px;
         width: 25%;
         text-align: center;
-        margin-right: 150px;
+        margin-right: 200px;
 }
 
 .navigation :hover{
@@ -67,31 +67,50 @@ li {
 }
 
 h1{
-    border: 4px solid black;
+    
     padding: 10px 50px;
     position: relative;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gold;
-    color: black;
+    background: -webkit-linear-gradient( purple, gold);
+    color: white;
 }
 h1:hover {
-    background: -webkit-linear-gradient( purple, gold);
+    background: -webkit-linear-gradient( gold, purple);
 }
          
 .hero-text button {
     border: none;
+    border-radius: 10px;
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: white;
-    background-color: purple;
+    color: black;
+    background: -webkit-linear-gradient( gold, purple);
     text-align: center;
-    cursor: pointer
+    cursor: pointer;
+    font-size: 30px;
+    
 }
 .hero-text button:hover {
-    background: -webkit-linear-gradient( gold, purple);
+    background: -webkit-linear-gradient( purple, gold);
     color: black;
+}
+
+.hero-text button:hover::before{
+    content: "🌟";
+}
+
+.hero-text button:hover::after{
+    content: "🌟";
+}
+
+.hero-text button::after{
+    content: "🪄";
+}
+
+.hero-text button::before{
+    content: "🪄";
 }
 
 .card{
@@ -124,3 +143,4 @@ h1:hover {
   footer li {
     color: black;
   }
+

@@ -1,0 +1,12 @@
+@media (max-width: 1000px) {
+
+
+.navigation li a {
+    float: left;
+    text-align: center;
+    margin-right: 100px;
+}
+
+
+
+}
