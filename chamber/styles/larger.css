@@ -49,22 +49,20 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        margin-left: 160px;
         border-radius: 10px;
-       
+        width: 67%;
+        
    
     }
-    li{
-        margin-right: 60px;
-    }
+ 
+    
     .navigation li a:hover {
         background-color: gold;
-        width: 65%;
+        
         color: black;
         font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 10px;
+        
+       
 
         
     }
@@ -73,10 +71,9 @@
         display: block;
         width: 100%;
         border-radius: 10px;
+        
     }
-    .open li a {
-        display: block;
-    }
+   
     
 
     .active1::before{
@@ -93,17 +90,6 @@
     .active4::before{
         content: "✅";
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
