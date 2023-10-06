@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 430px) {
 
 
 .navigation li a {
@@ -7,16 +7,44 @@
     margin-right: 100px;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.hero-text{
+    margin-left: -40px;
+}
+
+.navigation {
+    margin-right: 60px;
     
 }
 
-.card {
-    flex: 0 1 24%;
-
+.cards{
+    
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    
+    margin-top: 20px;
+    
+    
+    
 }
 
+.card{
+    margin-top: 20px;
+    margin-right: 75px;
+    border-radius: 10px;
+    
+}
+
+
+
+.cards ul li {
+    margin-left: -50px;
+}
+
+footer ul li {
+    margin-right: 70px;
+}
+footer p{
+    margin-right: 80px;
+}
 }

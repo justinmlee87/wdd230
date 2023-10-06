@@ -24,7 +24,11 @@ nav {
     display: flex;
 }
 
-
+.navigation li{
+    border: 2px solid purple;
+    background-color: #fc8cdf;
+    margin-left: -20px;
+}
 .navigation li a {
         float: left;
         padding: 12px;
@@ -34,7 +38,9 @@ nav {
         width: 25%;
         text-align: center;
         margin-right: 200px;
+        
 }
+
 
 .navigation :hover{
     background-color: purple;
@@ -55,15 +61,15 @@ li {
 .hero {
     filter: blur(5px);
     width: 100%;
-    height: 50vh
+    height: 60vh
 }
 
 .hero-text {
-    text-align:center;
     position: absolute;
+    text-align:center;
     font-size: 18px;
-    top: 50px;
-    left: 27%;
+    left: 25%;
+    top: 10%;
 }
 
 h1{
@@ -113,36 +119,6 @@ h1:hover {
     content: "🪄";
 }
 
-.cards{
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 10px;
-    background-color: purple;
-    color: white;
-    grid-row: 1;
-    margin-inline: 10px;
-    justify-self: auto;
-    grid-column: 1;
- }
- .card{
-    flex: 0 1 24%;
-    background-color: #280C3C;
-    
- }
-  .card :hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .card  h2 {
-    text-align: center;
-    background-color: #ca9deb;
-    color: black;
-    margin-top: 0%;
-    margin-bottom: auto;
-    justify-content: space-between;
-  }
 
 
   footer {
@@ -157,5 +133,45 @@ h1:hover {
 
   footer li {
     color: black;
+    margin-left: -50px;
   }
 
+  .cards{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    color: white;
+    grid-row: 1;
+    margin-inline: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: auto;
+    grid-column: 1;
+    
+ }
+
+ .cards h2 {
+    text-align: center;
+    
+ }
+
+
+ .card{
+    flex: 0 1 32%;
+    background-color: purple;
+    border: 2px solid gold;
+    border-radius: 10px;
+    
+ }
+
+ .cards ul li{
+    text-align: center;
+ }
+
+ main {
+    background-color: #a21d56;
+ }
+ 

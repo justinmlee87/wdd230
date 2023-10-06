@@ -1,24 +1,12 @@
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 
 
-#menu {
-    display: none;
-}
+    #menu {
+        display: none;
+    }
 
 .hero-text{
     margin-right: 200px;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.card {
-    flex: 0 1 24%;
-
 }
 
 
