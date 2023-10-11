@@ -17,17 +17,22 @@ nav {
     font-size: 20px;
     width: 100%;
     justify-content: space-around;
-    border-radius: 10px;
+    
 
 }
 .navigation{
     display: flex;
+    
+    
 }
 
 .navigation li{
     border: 2px solid purple;
     background-color: #fc8cdf;
-    margin-left: -20px;
+    margin-left: -30px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .navigation li a {
         float: left;
@@ -174,4 +179,12 @@ h1:hover {
  main {
     background-color: #a21d56;
  }
- 
+
+
+ #mode {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
