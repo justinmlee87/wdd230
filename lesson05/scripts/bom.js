@@ -1,29 +1,43 @@
 
-const list = document.querySelector('#list');
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-
+const list = document.querySelector('#list');
+var listCount = 0;
+ 
 button.addEventListener('click', () => {
-  const myItem = input.value;
-  input.value = '';
-
-  const listItem = document.createElement('li');
-  const listText = document.createElement('span');
-  const deleteBtn = document.createElement('button');
-
-  listItem.appendChild(listText);
-  listText.textContent = myItem;
-  listItem.appendChild(deleteBtn);
-  deleteBtn.textContent = '❌';
-  list.appendChild(listItem);
-
-  deleteBtn.addEventListener('click', () => {
-    list.removeChild(listItem);
-  });
-
-  input.focus();
+ 
+ 
+    if (input.value != '') {
+        input.focus();
+        if (listCount < 10) {
+            const li = document.createElement('li');
+            const deleteButton = document.createElement('button');
+ 
+            li.textContent = input.value;
+            deleteButton.textContent = '❌';
+ 
+            li.append(deleteButton);
+ 
+            list.append(li);
+ 
+            listCount += 1;
+ 
+            deleteButton.addEventListener('click', () => {
+                list.removeChild(li);
+                input.focus();
+                listCount -= 1;
+            })
+ 
+            input.focus()
+ 
+            input.value = '';
+        }
+        else {
+            window.alert("You have reached the maximum number of Favorite Chapters. Please delete one to continue adding.");
+        }
+    }
+ 
 });
-
 
 
 
