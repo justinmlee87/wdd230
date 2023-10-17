@@ -9,6 +9,16 @@
     margin-right: 200px;
 }
 
+.hero-image picture {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 

@@ -1,4 +1,4 @@
-@media (max-width: 430px) {
+@media (max-width: 700px) {
 
 
 .navigation li a {
@@ -9,6 +9,11 @@
 
 .hero-text{
     margin-left: -40px;
+    font-size: 8px;
+}
+
+.hero-text button{
+    font-size: 15px;
 }
 
 .navigation {
@@ -21,7 +26,6 @@
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    
     margin-top: 20px;
     
     
@@ -37,8 +41,16 @@
 
 
 
-.cards ul li {
-    margin-left: -50px;
+.hero-image picture {
+    width: 100%;
+    height: auto;
 }
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 }

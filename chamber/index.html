@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon(1).ico">
-    <link rel="stylesheet" href="images/Orlando.jpeg">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="images/Orlando.webp">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.campspot.com/c/images/cms/1200w/2023/01/Orlando.jpg">
@@ -26,7 +26,11 @@
 <body>
     <header>
         <div class="hero-image">
-            <img class="hero" src="images/Orlando.jpeg" alt="orlando">
+            <picture>
+                <source srcset="images/smallimg.webp" media="(max-width: 700px)">
+                <source srcset="images/imgmedium.webp" media="(max-width: 1000px)">
+                <img src="images/imglarge.webp" alt="table" width="1500" height="750">
+            </picture>
             <div class="hero-text">
                 <h1>Orlando Chamber of Commerce</h1>
                 <button>Join Now!</button>
@@ -64,11 +68,12 @@
         
 
                 <article class="card">
-                    <h2>Weather</h2>
+                    <h2>Today's Weather</h2>
                     <ul id="Weather">
-                        <li>Right now:</li>
-                        <li>Later today:</li>
-                        <li>10 day forecast:</li>
+                        <li>High: 71&deg;</li>
+                        <li>Low: 56&deg;</li>
+                        <li>Wind: 11mph</li>
+                        <li>Windchill: <span id="windChill"></span>&deg;</li>
                     </ul>
                 </article>
         
@@ -98,6 +103,7 @@
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
     
 </body>
 </html>
