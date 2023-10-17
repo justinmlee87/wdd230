@@ -8,11 +8,12 @@
 
     .hero picture {
         width: 500px;
-        height: 500px;
+        grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 4;
         margin-right: -100px;
     }
+
     
     .hero img {
         margin-top: -16px;
@@ -23,9 +24,24 @@
         margin-left: -60px;
     
     }
-    .container {
+
+    .hero-text {
+        position: absolute;
+        font-size: 18px;
+        top: 400px;
+        margin-left: -10px;
+        
+        
+      }
+
+
+
+    
+    .container iframe{
         grid-row: 5;
         justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
 
@@ -53,6 +69,7 @@
 
 
       #menu {
+        display: block;
         font-size: 1.5rem;
         border: 1px solid rgba(0,0,0,.3);
         padding: .25rem .75rem;
@@ -71,6 +88,8 @@
         content: "✖️";
       }
 
+
+
       .navigation {
         display: flex;
         flex-direction: column;
@@ -87,10 +106,11 @@
         text-align: center;
         text-decoration: none;
         color: #a9a9fe;
+        margin-left: 210px;
     }
     .navigation li a:hover {
-        background-color: #bbb;
-        color: #333;
+        background-color: #a9a9fe;
+        color: black;
         font-weight: 700;
     }
 

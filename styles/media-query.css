@@ -1,5 +1,6 @@
 @media (min-width: 1000px) {
 
+    }
     main{
         display: grid;
     }
@@ -79,10 +80,6 @@
         padding-left: 90px;
       }
 
-      #menu {
-		display: none; 
-      }
-
       .navigation {
 		flex-direction: row;
 	}
@@ -92,7 +89,8 @@
 		flex: 1 1 100%;
 	}
 	
+    #menu{
+        display: none;
+    }
 
 
-
-}
