@@ -16,12 +16,13 @@
 
     
     .hero img {
+        display: flex;
         margin-top: -16px;
         width: 800px;
         height: 400px;
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-left: -60px;
+        margin-left: -20px;
     
     }
 
