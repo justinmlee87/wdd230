@@ -1,13 +1,44 @@
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     nav a {
         display: flex;
         flex: 1 1 100%;
         justify-content: space-evenly;
     }
+
+    .hero picture {
+        width: 500px;
+        height: 500px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-right: -100px;
+    }
     
+    .hero img {
+        margin-top: -16px;
+        width: 800px;
+        height: 400px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-left: -60px;
+    
+    }
+    .container {
+        grid-row: 5;
+        justify-content: center;
+    }
+
+
     .card {
         margin-bottom: 20px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+    }
+    .cardI {
+        grid-row: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     .navigation li a {
