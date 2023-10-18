@@ -7,33 +7,28 @@
     }
 
     .hero picture {
-        width: 500px;
-        grid-row: 1;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin-right: -100px;
+        width: 100%;
+        height: auto;
+        
     }
 
     
     .hero img {
-        display: flex;
-        margin-top: -111px;
-        width: 1000px;
-        height: 500px;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin-left: -20px;
+        
+        
+        width: 100%;
+        height: auto;
+       
+       
         
     
     }
 
     .hero-text {
-        
-        position: relative;
-        font-size: 18px;
-        top: 10px;
+        position: absolute;
+        top: 400px;
         margin-right: 650px;
-        margin-left: -10px;
+        
       }
 
 
