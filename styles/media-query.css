@@ -20,8 +20,6 @@
     .hero img {
         grid-template-columns: max-content;
         margin-top: -16px;
-        width: 1500;
-        height: 750;
         grid-column-start: 1;
         grid-column-end: 4;
         margin-left: -1px;
