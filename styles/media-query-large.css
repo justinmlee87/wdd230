@@ -17,22 +17,23 @@
     
     .hero img {
         display: flex;
-        margin-top: -16px;
-        width: 800px;
-        height: 400px;
+        margin-top: -111px;
+        width: 1000px;
+        height: 500px;
         grid-column-start: 1;
         grid-column-end: 4;
         margin-left: -20px;
+        
     
     }
 
     .hero-text {
-        position: absolute;
+        
+        position: relative;
         font-size: 18px;
-        top: 400px;
+        top: 10px;
+        margin-right: 650px;
         margin-left: -10px;
-        
-        
       }
 
 
@@ -79,6 +80,7 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
+        
     }
 
       #menu::before{
@@ -97,6 +99,7 @@
         list-style: none;
         background-color: black;
         color: #a9a9fe;
+        z-index: 0;
     }
     .navigation li {
         display: none;

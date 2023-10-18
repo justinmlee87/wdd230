@@ -24,7 +24,8 @@
         height: 750;
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-left: -5px;
+        margin-left: -1px;
+        
     }
 
     h2{
