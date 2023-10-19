@@ -24,12 +24,11 @@
     
     }
 
-    .hero-text {
-        position: absolute;
-        top: 400px;
-        margin-right: 650px;
+    .hero-text{
+        top: 5%;
+        left: 5%;
         
-      }
+    }
 
 
 

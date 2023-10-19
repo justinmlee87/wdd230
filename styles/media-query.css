@@ -6,6 +6,7 @@
     }
 
     .hero {
+        position: relative;
        grid-column-start: 1;
        grid-column-end: 4;
     }
@@ -15,6 +16,12 @@
         height: auto;
         grid-column-start: 1;
         grid-column-end: 4;
+    }
+
+    .hero-text{
+        top: 5%;
+        left: 5%;
+        padding: 1.5rem;
     }
     
     .hero img {
