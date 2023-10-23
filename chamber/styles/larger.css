@@ -1,11 +1,24 @@
 @media (max-width: 1000px) {
 
 
-
-    .hero-text {
-        margin-right: 200px;
+    
+    .hero-text{
+        
+        left: 2%;
+        margin-right: 10px;
     }
 
+    .hero picture {
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+    
+    }
 
 
     #menu {
@@ -15,7 +28,7 @@
         background-color: #eee;
         color: #000;
         position: absolute;
-        top: 1rem;
+        top: 1px;
         right: 1rem;
     }
 
@@ -103,5 +116,26 @@
         height: auto;
     }
 
+
+    .card1{
+        display: grid;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-right: 20px;
+    }
+    .card2{
+        display: grid;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-right: 20px;
+    }
+    .card3{
+        display: grid;
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 
 }

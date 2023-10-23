@@ -34,7 +34,7 @@ modeButton.addEventListener("click", () => {
 		navigation.style.background = "black";
 		modeButton.textContent = "☀️";
 	} else {
-		main.style.background = "#fff";
+		main.style.background = "#a21d56";
 		main.style.color = "#fff";
 		nav.style.background = "gold";
 		nav.style.color = "purple";

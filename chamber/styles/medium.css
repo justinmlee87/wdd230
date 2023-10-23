@@ -5,8 +5,21 @@
         display: none;
     }
 
+    .hero picture {
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+    
+    }
+
 .hero-text{
-    margin-right: 200px;
+    right: 15%;
+    text-align: center;
 }
 
 .hero-image picture {

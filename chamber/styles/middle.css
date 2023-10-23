@@ -1,5 +1,8 @@
 @media (max-width: 700px) {
 
+    main{
+        display: grid;
+    }
 
 .navigation li a {
     float: left;
@@ -7,9 +10,32 @@
     margin-right: 100px;
 }
 
-.hero-text{
-    margin-left: -40px;
-    font-size: 8px;
+
+.hero picture {
+    width: 100%;
+    height: auto;
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+
+}
+
+}
+
+
+.hero {
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+.hero picture {
+    grid-template-columns: max-content;
+    width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .hero-text button{
@@ -24,22 +50,14 @@
 .cards{
     
     width: 100%;
-    display: block;
+    display: grid;
+    grid-row: 1;
     margin-bottom: 20px;
     margin-top: 20px;
     
     
     
 }
-
-.card{
-    margin-top: 20px;
-    margin-right: 45px;
-    border-radius: 10px;
-    
-}
-
-
 
 .hero-image picture {
     width: 100%;
@@ -51,6 +69,11 @@
     height: auto;
 }
 
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 200px auto;
+    margin-bottom: 10px;
+  }
 
-
-}
