@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <link rel="stylesheet" href="styles/form.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form build</title>
+        <meta name="author" content="Justin Lee">
+        <meta name="description" content="This is My Form Build assignment">
+        <link rel="icon" href="images/favicon.ico">
+        <meta property="og:title" content="My Name is Justin Lee">
+        <meta property="og:type" content="Website">
+        <meta property="og:image" content="https://www.campspot.com/c/images/cms/1200w/2023/01/Orlando.jpg">
+        <meta property="og: URL" content="http://127.0.0.1:5500/index.html">
+        <link rel="stylesheet" href="scripts/visitcounter.js">
+        <link rel="stylesheet" href="scripts/password.js">
+    </head>
+<body>
+
+    <header> 
+        <img src="images/Me.webp" alt="Picture of Me">
+        <h1>Justin M. Lee</h1>
+
+        
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home" class="active3">Home</a> 
+            </li>
+            <li><a href="lesson03/chamber-site-plan.html" title="Site Plan" class="active">Site Plan</a></li>
+            <li><a href="chamber/index.html" title="Chamber" class="active1">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank" class="active2">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=eng" target="_blank" class="active4">Scripture</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>Username* <input type="text" name="uname" id="uname" required></label> 
+                <label>Password* <input type="text" name="pword" id="pword" pattern="[A-Za-z]{8}" placeholder="At least 8 characters long, no numbers." required></label> 
+                <label>Confirm Password* <input type="text" name="cpword" id="cpword" required></label> 
+                <br>
+                <label>Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label> 
+                <br>
+                <label for="r">Page Rating </label> <div id="rangevalue">0</div> <input type="range" name="r" id="r" min="0" max="10" step="1" required list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist></label>
+            </fieldset>
+
+            <input type="submit" value="Submit Information">
+
+
+
+
+        </form>
+
+
+
+
+    </main>
+
+    <footer> 
+        <ul id="paragraph">
+            <li>Justin Lee</li>
+            <li>United States of America</li>
+            <li>Copyright © Brigham Young University-Idaho | All rights reserved</li>
+        </ul>
+        <p>Modification Date: <span id="lastModified"></span>  </p>
+       
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/password.js"></script>
+    
+</body>
+</html>
