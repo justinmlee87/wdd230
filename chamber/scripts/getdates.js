@@ -23,7 +23,7 @@ const paragraph = document.querySelector("#paragraph li");
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🌑")) {
 		main.style.background = "#000";
-		main.style.color = "#000";
+		main.style.color = "white";
 		nav.style.background = "purple";
 		nav.style.color = "gold";
 		footer.style.background = "purple";
@@ -32,10 +32,12 @@ modeButton.addEventListener("click", () => {
 		p.style.color = "white";
 		paragraph.style.color = "white";
 		navigation.style.background = "black";
+		
 		modeButton.textContent = "☀️";
+		
 	} else {
 		main.style.background = "#a21d56";
-		main.style.color = "#fff";
+		main.style.color = "black";
 		nav.style.background = "gold";
 		nav.style.color = "purple";
 		footer.style.background = "gold";
@@ -44,6 +46,7 @@ modeButton.addEventListener("click", () => {
 		p.style.color = "black";
 		paragraph.style.color = "black";
 		navigation.style.background = "purple";
+		
 		modeButton.textContent = "🌑";
 	}
 });
