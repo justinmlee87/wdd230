@@ -1,0 +1,24 @@
+{
+    "Family Name" : "Lee Family",
+    "Move in Date" : "11/16/2023",
+    "Total Family Members" : "3",
+    "Date Visited" : "11/16/2023",
+    "Family Members" : [
+        {
+            "Name" : "Bob Lee",
+            "Gender" : "Male",
+            "Birth Date" : "01/1964"
+        },
+        {
+            "Name" : "Jenny Lee",
+            "Gender" : "Female",
+            "Birth Date" : "01/1966"
+        },
+        {
+            "Name" : "Johnny Lee",
+            "Gender" : "Male",
+            "Birth Date" : "06/1990"
+        }
+    ]
+}
+
