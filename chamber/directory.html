@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 - Web Frontend Development -  Justin Lee - Chamber of Commerce Site">
+    <meta name="author" content="Justin Lee">
+    <title>[Justin Lee] - WDD230 - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="images/Orlando.webp">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.campspot.com/c/images/cms/1200w/2023/01/Orlando.jpg">
+    <meta property="og:URL" content="https://justinmlee87.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/middle.css">
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div id="mode">
+                🌑
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a class="active1" href="#" title="Home">Home</a></li>
+                <li><a class="active2" href="" target="Directory">Directory</a></li>
+                <li><a class="active3" href="discover.html" target="Discover">Discover</a></li>
+                <li><a class="active4" href="join.html" target="_blank">Join</a></li>
+    
+            </ul>
+    
+        </nav>
+
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/smallimg.webp" media="(max-width: 700px)">
+                <source srcset="images/imgmedium.webp" media="(max-width: 1000px)">
+                <img src="images/imglarge.webp" alt="table" width="1500" height="750">
+            </picture>
+            <div class="hero-text">
+                <h1>Orlando Chamber of Commerce</h1>
+                
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main_directory">
+        <div class="directory_menu">
+            <button id="grid">⏹️</button>
+            <button id="list">📄</button>
+        </div>
+        <hr>
+        <article class="grid">
+            <section>
+                <img src="images/BusinessLogos/Disney.webp" alt="Disney World Logo" loading="lazy" height="150" width="150"/>
+                <h3>Walt Disney World</h3>
+                <p>Orlando, FL 32830</p>
+                <p>(407) 939-5277</p>
+                <a href="https://disneyworld.disney.go.com/" target="_blank">disneyworld.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Universal.webp" alt="Universal Logo" loading="lazy" height="150" width="150"/>
+                <h3>Universal Studios</h3>
+                <p>6000 Universal Blvd, Orlando, FL 32819</p>
+                <p>(407) 363-8000</p>
+                <a href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida" target="_blank">universal.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/seaworld.webp" alt="Seaworld Logo" loading="lazy" height="150" width="150"/>
+                <h3>Seaworld Orlando</h3>
+                <p>7007 Seaworld Dr, Orlando, FL 32821</p>
+                <p>(407) 545-5550</p>
+                <a href="https://seaworld.com/" target="_blank">seaworld.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Legoland.webp" alt="Legoland Logo" loading="lazy" height="150" width="150"/>
+                <h3>Legoland</h3>
+                <p>1 LEGOLAND Way, Winter Haven, FL 33884</p>
+                <p>(888) 690-5346</p>
+                <a href="https://www.legoland.com/florida/" target="_blank">legoland.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Dr-Phillips.webp" alt="DrPhillips Logo" loading="lazy" height="150" width="150"/>
+                <h3>Dr Phillips Center for Performing Arts</h3>
+                <p>445 S Magnolia Ave, Orlando, FL 32801</p>
+                <p>(844) 513-2014</p>
+                <a href="https://www.drphillipscenter.org/" target="_blank">drphillips.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Hilton.webp" alt="Hilton Logo" loading="lazy" height="150" width="150"/>
+                <h3>Hilton Orlando</h3>
+                <p>6001 Destination Parkway, Orlando, FL 32819</p>
+                <p>(407) 313-4300</p>
+                <a href="https://www.hilton.com/hilton/orlando" target="_blank">hilton.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Marriott.webp" alt="Marriott Logo" loading="lazy" height="150" width="150"/>
+                <h3>Marriott Orlando</h3>
+                <p>400 West Livingston Street, Orlando, FL 32801</p>
+                <p>(407) 868-8686</p>
+                <a href="https://www.marriott.com/marriott hotels/orlando" target="_blank">marriott.com</a>
+            </section>
+            <section>
+                <img src="images/BusinessLogos/Spectrum.webp" alt="Spectrum Logo" loading="lazy" height="150" width="150"/>
+                <h3>Spectrum</h3>
+                <p>1906 S Semoran Blvd, Orlando, FL 32822</p>
+                <p>(866) 874-2389</p>
+                <a href="www.spectrum.com" target="_blank">spectrum.com</a>
+            </section>
+            
+            
+
+
+    </main>
+
+    <footer>
+        <p>Modification Date: <span id="lastModified"></span>  </p>
+        <ul id="paragraph">
+            <li>Justin Lee | Orlando, Florida | Copyright © Brigham Young University-Idaho | All rights reserved</li>
+        </ul>
+        
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/grid.js"></script>
+    
+</body>
+</html>

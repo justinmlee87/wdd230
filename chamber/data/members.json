@@ -1,0 +1,76 @@
+{
+    "Companies" : [
+
+        {
+            "Name" : "Walt Disney World",
+            "Address" : "Orlando, FL 32830",
+            "Phone Number" : "(407) 939-5277",
+            "URL" : "https://disneyworld.disney.go.com/",
+            "Image" : "images/BusinessLogos/Disney.webp"
+            
+        },
+
+        {
+            "Name" : "Universal Studios",
+            "Address" : "6000 Universal Blvd, Orlando, FL 32819",
+            "Phone Number" : "(407) 363-8000",
+            "URL" : "https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida",
+            "Image" : "images/BusinessLogos/Universal.webp"
+            
+        },
+
+        {
+            "Name" : "Seaworld Orlando",
+            "Address" : "7007 Seaworld Dr, Orlando, FL 32821",
+            "Phone Number" : "(407) 545-5550",
+            "URL" : "https://seaworld.com/",
+            "Image" : "images/BusinessLogos/seaworld.webp"
+            
+        },
+
+        {
+            "Name" : "Legoland",
+            "Address" : "1 LEGOLAND Way, Winter Haven, FL 33884",
+            "Phone Number" : "(888) 690-5346",
+            "URL" : "https://www.legoland.com/florida/",
+            "Image" : "images/BusinessLogos/Legoland.webp"
+            
+        },
+
+        {
+            "Name" : "Dr Phillips Center For Performing Arts",
+            "Address" : "445 S Magnolia Ave, Orlando, FL 32801",
+            "Phone Number" : "(844) 513-2014",
+            "URL" : "https://www.drphillipscenter.org/",
+            "Image" : "images/BusinessLogos/Dr-Phillips.webp"
+            
+        },
+
+        {
+            "Name" : "Hilton Orlando",
+            "Address" : "6001 Destination Parkway, Orlando, FL 32819",
+            "Phone Number" : "(407) 313-4300",
+            "URL" : "https://www.hilton.com/hilton/orlando",
+            "Image" : "images/BusinessLogos/Hilton.webp"
+            
+        },
+
+        {
+            "Name" : "Marriott Orlando",
+            "Address" : "400 West Livingston Street, Orlando, FL 32801",
+            "Phone Number" : "(407) 868-8686",
+            "URL" : "https://www.marriott.com/marriott hotels/orlando",
+            "Image" : "images/BusinessLogos/Marriott.webp"
+            
+        },
+
+        {
+            "Name" : "Spectrum",
+            "Address" : "1906 S Semoran Blvd, Orlando, FL 32822",
+            "Phone Number" : "(866) 874-2389",
+            "URL" : "www.spectrum.com",
+            "Image" : "images/BusinessLogos/Spectrum.webp"
+            
+        }
+    ]
+}
