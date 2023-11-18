@@ -123,7 +123,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 10px;
-    background-color: black;
+    background-color: #d9a9fe;
   
   }
   .card :hover{
@@ -131,12 +131,16 @@
   }
   
   .card li a {
-    color: #a9a9fe;
+    color: black;
     text-align: center;
     justify-content: space-around;
     margin: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+  }
+
+  .card li{
+    color: black;
   }
 
   .cardI{
@@ -218,7 +222,28 @@
 }
 
 .cardI p{
-  color: white;
+  color: black;
   font-size: 20px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 190px;
+}
+
+figcaption{
+  color: black;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 150px;
+}
+
+.cardI li{
+  color: black;
+}
+
+.cardI img{
+  margin-left: 100px;
+  
+}
+
+.cardI{
+  background-color: #d9a9fe;
 }
