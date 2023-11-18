@@ -37,8 +37,14 @@
                 <li><a class="active4" href="join.html" target="_blank">Join</a></li>
     
             </ul>
+            
     
         </nav>
+        <div class="announcement">
+            <span class="announcement-text">Attend the Orlando Chamber of Commerce meet and greet this Wednesday at 7:00
+                p.m.</span>
+            <span class="announcement-button hover">❌</span>
+        </div>
 
         <div class="hero-image">
             <picture>
@@ -70,11 +76,22 @@
                 <article class="card2">
                     <h2>Today's Weather</h2>
                     <ul id="Weather">
-                        <li>High: 71&deg;</li>
-                        <li>Low: 56&deg;</li>
-                        <li>Wind: 11mph</li>
+                        <li>Temperature: <span id="current-temp">50</span></li>
+                        <li>Wind Speed: <span id="windSpeed">3.1</span> mph</li>
                         <li>Windchill: <span id="windChill"></span>&deg;</li>
+                        <li>
+                            <figure>
+                                <img id="weather-icon" src="https://picsum.photos/50" alt="weather-icon">
+                                <figcaption></figcaption>
+                            </figure>
+                        </li>
                     </ul>
+                    <h2>Predicted Forecast</h2>
+                    <ul>
+                        <li><span id="day1ForcastDate"></span> - <span id="day1Forcast"></span></li>
+                        <li><span id="day2ForcastDate"></span> - <span id="day2Forcast"></span></li>
+                        <li><span id="day3ForcastDate"></span> - <span id="day3Forcast"></span></li>
+                        <li><span id="day4ForcastDate"></span> - <span id="day4Forcast"></span></li>
                 </article>
         
 
@@ -104,6 +121,8 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/announcement.js"></script>
     
 </body>
 </html>
