@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+
+
+#menu::before{
+    content: "☰";
+  }
+
+  #menu.open::before{
+    content: "✖️";
+  }
+
+  .navigation a {
+    display: none;
+    text-align: center;
+    margin-left: -45px;
+}
+
+  .open a {
+    display: block;
+    width: 100%;
+}
+.open a {
+    display: block;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: block;
+    background-color: #333;
+}
+
+nav a{
+    color: #a1ecff;
+}
+
+.content {
+    margin-left: 0;
+}
+
+
+}

@@ -1,0 +1,122 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+header {
+    background-color: #a1ecff;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#mode {
+	position: absolute;
+	top: -1px;
+	left: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
+    
+}
+
+header h2{
+    font-size: 1.5rem;
+}
+
+nav {
+    width: 200px;
+    background-color: #333;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: large;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #a1ecff;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+nav a:hover {
+    background-color: #f6d7b0;
+    color: black;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: #a1ecff;
+    font-size: large;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.hero-image {
+    
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+    
+    
+}
+
+footer {
+    background-color: #a1ecff;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reserve-button {
+    background-color: #74b560;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+.reserve-button:hover {
+    background-color: #45a049;
+}
+
+
