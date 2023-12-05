@@ -27,7 +27,7 @@
         </div>
         <h1>Scoots</h1>
         <h2>Scooter Rentals - Cozumel Mexico</h2>
-
+        
         <a href="reservations.html">
             <button class="reserve-button">Reserve</button>
         </a>
@@ -52,50 +52,21 @@
 
     <div class="content">
 
-        <div class="hero-image">
-                
-                <img src="images/scooters.jpg" alt="table setting" loading="lazy" width="1500" height="750">
-            </picture>
+        <h1>Rentals</h1>
 
-        </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Rental Type</th>
+                <th>Max. Persons</th>
+                <th>Reservations (half-day/full-day)</th>
+                <th>Walk-In (half-day/full-day)</th>
+            </tr>
+        </thead>
+        <tbody id="rentalsTableBody">
+        </tbody>
+    </table>
 
-        <section>
-            <h2><u>Contact Us</u></h2>
-            <p>Content of section 1 goes here...</p>
-        </section>
-
-        <section>
-            <h2><u>Weather</u></h2>
-            <ul id="Weather">
-                <li>Temperature: <span id="current-temp">50</span></li>
-                <li><span id="humidity"></span></li>
-                <li>
-                    <figure>
-                        <img id="weather-icon" src="https://picsum.photos/50" alt="weather-icon">
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <h2><u>Predicted Forecast</u></h2>
-            <ul>
-                <li><span id="day1ForcastDate"></span> - <span id="day1Forcast"></span></li>
-                <li><span id="day2ForcastDate"></span> - <span id="day2Forcast"></span></li>
-                <li><span id="day3ForcastDate"></span> - <span id="day3Forcast"></span></li>
-                <li><span id="day4ForcastDate"></span> - <span id="day4Forcast"></span></li>
-        </section>
-
-        <section>
-            <h2><u>Rental Types</u></h2>
-            <p>Honda Motor Scooters</p>
-                <li>Honda Metropolitan (49cc) - 1 person</li>
-                <li>Honda Dio (110cc) - 2 person</li>
-                <li>Honda PCX150 (149cc) - 2 person</li>
-            <p>Side-by-Side ATVS</p>
-                <li>Honda Pioneer 1000 - 4 person</li>
-            <p>Jeeps</p>
-                <li>Jeep Wrangler - 4 door - manuel - A/C - 5 person</li>
-                <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-        </section>
 
     </div>
     </main>
@@ -107,8 +78,8 @@
 </body>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/light-dark.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/humidity.js"></script>
 <script src="scripts/banner.js"></script>
+<script src="scripts/rentals.js"></script>
+<script src="data/rentals.json"></script>
 
 </html>

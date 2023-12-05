@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - WDD230 - Final Project</title>
+    <meta name="author" content="Justin Lee">
+    <meta name="description" content="Scoots is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Scoots - WDD230 BYUI 2023">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https">
+    <meta property="og: URL" content="https://justinmlee87.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+
+
+</head>
+<body>
+
+    <header>
+        <div id="mode">
+            🌜
+        </div>
+        <h1>Scoots</h1>
+        <h2>Scooter Rentals - Cozumel Mexico</h2>
+        
+        <a href="reservations.html">
+            <button class="reserve-button">Reserve</button>
+        </a>
+        
+    </header>
+    <div id="weather-alert">
+        <span id="alert-message"></span>
+        <span id="close-btn" onclick="closeWeatherAlert()">✖️</span>
+    </div>
+
+    <main>
+    <nav>
+
+        <button id="menu"></button>
+        <ul class="navigation">
+            <a href="final.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        
+        <div>
+            <div class="rental-info">
+            <h2><u>Rental Services and Agreements</u></h2>
+                <li>A $50.00 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>12+ age requirement to ride on scooters. No exceptions.</li>
+                <li>Fuel charge not included</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance included.</li>
+                <li>Damage insurance available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </div>
+        </div>
+
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="period">Rental Period:</label>
+            <input type="text" id="period" name="period" required>
+
+            <label for="rentalType">Rental Type:</label>
+            <select id="rentalType" name="rentalType" required>
+                <option value="HMS">Honda Metro Scooter</option>
+                <option value="HDS">Honda Dio Scooter</option>
+                <option value="PCX150">Honda PCX150 Scooter</option>
+                <option value="HPATV">Honda Pioneer ATV</option>
+                <option value="JW4">Jeep Wrangler - 4 door - A/C</option>
+                <option value="JW2">Jeep Wrangler - 2 door</option>
+            </select>
+
+            <label for="number">Number of Rentals:</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="state">Home State or Country:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="cruiseLine">Cruise Line (if applicable):</label>
+            <input type="text" id="cruiseLine" name="cruiseLine">
+
+            <label for="accommodations">Special Accommodations/Comments:</label>
+            <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    </main>
+
+<footer>
+    <p>&copy; 2023 - Justin Lee - Scoots - WDD230 BYUI - All Rights Reserved</p>
+</footer>
+
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/light-dark.js"></script>
+<script src="scripts/banner.js"></script>
+
+</html>

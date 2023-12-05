@@ -104,11 +104,11 @@ footer {
 }
 
 .reserve-button {
-    background-color: #74b560;
+    background-color: #ff8c00;
     color: black;
     padding: 10px 20px;
     font-size: 16px;
-    border-color: white;
+    border-color: black;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
@@ -116,7 +116,92 @@ footer {
 }
 
 .reserve-button:hover {
-    background-color: #45a049;
+    background-color: orangered;
+}
+
+#weather-alert {
+    display: none;
+    background-color: #ff8c00;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#close-btn {
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #a1ecff;
 }
 
 
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #a1ecff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #a1ecff;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+.rental-info{
+    text-align: center;
+    color: #a1ecff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #a1ecff;
+    margin-bottom: 40px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #a1ecff;
+    color: black;
+}
+
+.content h1{
+    color: #a1ecff;
+}

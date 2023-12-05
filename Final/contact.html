@@ -27,7 +27,7 @@
         </div>
         <h1>Scoots</h1>
         <h2>Scooter Rentals - Cozumel Mexico</h2>
-
+        
         <a href="reservations.html">
             <button class="reserve-button">Reserve</button>
         </a>
@@ -52,50 +52,40 @@
 
     <div class="content">
 
-        <div class="hero-image">
-                
-                <img src="images/scooters.jpg" alt="table setting" loading="lazy" width="1500" height="750">
-            </picture>
-
+        <div class="contact-info">
+            <div>
+                <h2><u>Ferry Dock Location</u></h2>
+                <p>Address: Centro, San Miguel de Cozumel, Quintana Roo, Mexico</p>
+                <p>Email: scootsnorth@example.com</p>
+                <p>Phone: +1 123 456 789</p>
+            </div>
+            <div>
+                <h2><u>Cruise Terminal Location</u></h2>
+                <p>Address: Costera Sur, 77600 Cozumel, QROO, Mexico</p>
+                <p>Email: scootssouth@example.com</p>
+                <p>Phone: +1 987 654 321</p>
+            </div>
         </div>
-
-        <section>
-            <h2><u>Contact Us</u></h2>
-            <p>Content of section 1 goes here...</p>
-        </section>
-
-        <section>
-            <h2><u>Weather</u></h2>
-            <ul id="Weather">
-                <li>Temperature: <span id="current-temp">50</span></li>
-                <li><span id="humidity"></span></li>
-                <li>
-                    <figure>
-                        <img id="weather-icon" src="https://picsum.photos/50" alt="weather-icon">
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <h2><u>Predicted Forecast</u></h2>
-            <ul>
-                <li><span id="day1ForcastDate"></span> - <span id="day1Forcast"></span></li>
-                <li><span id="day2ForcastDate"></span> - <span id="day2Forcast"></span></li>
-                <li><span id="day3ForcastDate"></span> - <span id="day3Forcast"></span></li>
-                <li><span id="day4ForcastDate"></span> - <span id="day4Forcast"></span></li>
-        </section>
-
-        <section>
-            <h2><u>Rental Types</u></h2>
-            <p>Honda Motor Scooters</p>
-                <li>Honda Metropolitan (49cc) - 1 person</li>
-                <li>Honda Dio (110cc) - 2 person</li>
-                <li>Honda PCX150 (149cc) - 2 person</li>
-            <p>Side-by-Side ATVS</p>
-                <li>Honda Pioneer 1000 - 4 person</li>
-            <p>Jeeps</p>
-                <li>Jeep Wrangler - 4 door - manuel - A/C - 5 person</li>
-                <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-        </section>
+    
+        <div id="map">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38949.88905669664!2d-86.94547458868149!3d20.49333648874941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1701796396357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+        
 
     </div>
     </main>
@@ -107,8 +97,7 @@
 </body>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/light-dark.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/humidity.js"></script>
 <script src="scripts/banner.js"></script>
+
 
 </html>
