@@ -1,13 +1,12 @@
 {
 
-
     "rentals": [
-        {"type": "Honda Metro Scooter", "persons": 1, "reservations": {"halfDay": "$20", "fullDay": "$30"}, "walkIn": {"halfDay": "$25", "fullDay": "$35"}},
-        {"type": "Honda Dio Scooter", "persons": 2, "reservations": {"halfDay": "$30", "fullDay": "$40"}, "walkIn": {"halfDay": "$35", "fullDay": "$45"}},
-        {"type": "Honda PCX150 Scooter", "persons": 2, "reservations": {"halfDay": "$40", "fullDay": "$50"}, "walkIn": {"halfDay": "$45", "fullDay": "$55"}},
-        {"type": "Honda Pioneer ATV", "persons": 4, "reservations": {"halfDay": "$50", "fullDay": "$70"}, "walkIn": {"halfDay": "$60", "fullDay": "$80"}},
-        {"type": "Jeep Wrangler - 4 Door - With A/C", "persons": 5, "reservations": {"halfDay": "$70", "fullDay": "$100"}, "walkIn": {"halfDay": "$85", "fullDay": "$125"}},
-        {"type": "Jeep Wrangler - 2 Door", "persons": 4, "reservations": {"halfDay": "$60", "fullDay": "$85"}, "walkIn": {"halfDay": "$70", "fullDay": "$90"}}
+        {"type": "Honda Metro Scooter", "image": "https://lh3.googleusercontent.com/p/AF1QipMXTgbOaSLXDkr1PWyidSJ7wm-ryUmfEEYfrjI-=w1080-h608-p-no-v0", "persons": 1, "reservations": {"halfDay": "$20", "fullDay": "$30"}, "walkIn": {"halfDay": "$25", "fullDay": "$35"}},
+        {"type": "Honda Dio Scooter", "image": "https://stingrayvilla.com/wp-content/uploads/2020/01/Low-Season-The-perfect-time-to-enjoy-beautiful-Cozumel-1301-1024x681.jpg", "persons": 2, "reservations": {"halfDay": "$30", "fullDay": "$40"}, "walkIn": {"halfDay": "$35", "fullDay": "$45"}},
+        {"type": "Honda PCX150 Scooter", "image": "https://www.cycleworld.com/resizer/T9-qXrfgb0barVUZlUkYGd-EwRA=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/octane/UJ6N6VCCFNEP5IZW7BRC7NPB3I.jpg", "persons": 2, "reservations": {"halfDay": "$40", "fullDay": "$50"}, "walkIn": {"halfDay": "$45", "fullDay": "$55"}},
+        {"type": "Honda Pioneer ATV", "image": "https://dirtwheelsmag.com/wp-content/uploads/2700/01/PIONEER_6_DELUXE_CREW_1_e-scaled.jpg", "persons": 4, "reservations": {"halfDay": "$50", "fullDay": "$70"}, "walkIn": {"halfDay": "$60", "fullDay": "$80"}},
+        {"type": "Jeep Wrangler - 4 Door - With A/C", "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/7f/5e/73.jpg", "persons": 5, "reservations": {"halfDay": "$70", "fullDay": "$100"}, "walkIn": {"halfDay": "$85", "fullDay": "$125"}},
+        {"type": "Jeep Wrangler - 2 Door", "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/de/59/08/jeep-tour-cozumel-and.jpg?w=1200&h=-1&s=1", "persons": 4, "reservations": {"halfDay": "$60", "fullDay": "$85"}, "walkIn": {"halfDay": "$70", "fullDay": "$90"}}
     ]
 
 

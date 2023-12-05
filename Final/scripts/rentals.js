@@ -1,21 +1,27 @@
-
-const jsonData = {
-    "rentals": [
-        {"type": "Honda Metro Scooter", "persons": 1, "reservations": {"halfDay": "$20", "fullDay": "$30"}, "walkIn": {"halfDay": "$25", "fullDay": "$35"}},
-        {"type": "Honda Dio Scooter", "persons": 2, "reservations": {"halfDay": "$30", "fullDay": "$40"}, "walkIn": {"halfDay": "$35", "fullDay": "$45"}},
-        {"type": "Honda PCX150 Scooter", "persons": 2, "reservations": {"halfDay": "$40", "fullDay": "$50"}, "walkIn": {"halfDay": "$45", "fullDay": "$55"}},
-        {"type": "Honda Pioneer ATV", "persons": 4, "reservations": {"halfDay": "$50", "fullDay": "$70"}, "walkIn": {"halfDay": "$60", "fullDay": "$80"}},
-        {"type": "Jeep Wrangler - 4 Door - With A/C", "persons": 5, "reservations": {"halfDay": "$70", "fullDay": "$100"}, "walkIn": {"halfDay": "$85", "fullDay": "$125"}},
-        {"type": "Jeep Wrangler - 2 Door", "persons": 4, "reservations": {"halfDay": "$60", "fullDay": "$85"}, "walkIn": {"halfDay": "$70", "fullDay": "$90"}},
-    ]
-};
+   // Function to fetch JSON data
+   async function fetchRentalsData() {
+    try {
+        const response = await fetch('./data/rentals.json');
+        const jsonData = await response.json();
+        return jsonData;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
 
 // Function to populate the table with data
-function populateTable() {
+async function populateTable() {
     const tableBody = document.getElementById("rentalsTableBody");
+    const jsonData = await fetchRentalsData();
 
     jsonData.rentals.forEach(rental => {
         const row = document.createElement("tr");
+
+        const imageCell = document.createElement("td");
+        const image = document.createElement("img");
+        image.src = rental.image; // Add the path to the image in your JSON data
+        image.alt = rental.type;
+        imageCell.appendChild(image);
 
         const typeCell = document.createElement("td");
         typeCell.textContent = rental.type;
@@ -29,6 +35,7 @@ function populateTable() {
         const walkInCell = document.createElement("td");
         walkInCell.textContent = `${rental.walkIn.halfDay}/${rental.walkIn.fullDay}`;
 
+        row.appendChild(imageCell);
         row.appendChild(typeCell);
         row.appendChild(personsCell);
         row.appendChild(reservationsCell);
