@@ -218,7 +218,10 @@ th {
 }
 
 .content h1{
-    color: #a1ecff;
+    color: #333;
+}
+section h1{
+    color: #333;
 }
 
 img {

@@ -1,99 +1,87 @@
-const lat = '20.43';
-const lon = '-86.93';
-const key = '29f386de7cfc088dfc2373713d944ecd';
-const units = 'imperial';
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
+document.addEventListener('DOMContentLoaded', getWeather);
 
+function getWeather() {
+    const apiKey = '29f386de7cfc088dfc2373713d944ecd';
+    const latitude = 20.4;
+    const longitude = -86.93;
 
-// const URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
+    // Fetch current weather
+    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
+    fetch(currentWeatherUrl)
+        .then(response => response.json())
+        .then(currentData => {
+            displayCurrentWeather(currentData);
+        })
+        .catch(error => {
+            console.error('Error fetching current weather data:', error);
+        });
 
+    // Fetch 4-day forecast
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const day1Forcast = document.querySelector('#day1Forcast');
-const day2Forcast = document.querySelector('#day2Forcast');
-const day3Forcast = document.querySelector('#day3Forcast');
-const day4Forcast = document.querySelector('#day4Forcast');
-const day1ForcastDate = document.querySelector('#day1ForcastDate');
-const day2ForcastDate = document.querySelector('#day2ForcastDate');
-const day3ForcastDate = document.querySelector('#day3ForcastDate');
-const day4ForcastDate = document.querySelector('#day4ForcastDate');
+    fetch(forecastUrl)
+        .then(response => response.json())
+        .then(forecastData => {
+            displayPredictedWeather(forecastData);
+        })
+        .catch(error => {
+            console.error('Error fetching predicted weather data:', error);
+        });
+}
 
+function displayCurrentWeather(data) {
+    const currentWeatherContainer = document.getElementById('current-weather');
+    currentWeatherContainer.innerHTML = ''; // Clear previous content
 
-//Current weather
-async function weatherFetch() {
-    try {
-        const response = await fetch(weatherURL);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data);
-            displayWeather(data)
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
+    const currentTemperatureElement = document.createElement('p');
+    currentTemperatureElement.textContent = `Current Temperature: ${data.main.temp}°F`;
+
+    const humidityElement = document.createElement('p');
+    humidityElement.textContent = `Humidity: ${data.main.humidity}%`;
+
+    const descriptionElement = document.createElement('p');
+    descriptionElement.textContent = `Description: ${data.weather[0].description}`;
+
+    const iconElement = document.createElement('img');
+    iconElement.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    iconElement.alt = 'Weather Icon';
+
+    currentWeatherContainer.appendChild(currentTemperatureElement);
+    currentWeatherContainer.appendChild(humidityElement);
+    currentWeatherContainer.appendChild(descriptionElement);
+    currentWeatherContainer.appendChild(iconElement);
+}
+
+function displayPredictedWeather(data) {
+    const predictedWeatherContainer = document.getElementById('predicted-weather');
+    predictedWeatherContainer.innerHTML = ''; // Clear previous content
+
+    // predicted weather for the next 4 days
+    for (let i = 1; i <= 4; i++) {
+        const forecast = data.list[i * 8]; // Get data for every 8 hours (4 times for a 32-hour period)
+        const date = new Date(forecast.dt * 1000); // Convert date
+
+        const card = document.createElement('div');
+        card.classList.add('weather-card');
+
+        const dateElement = document.createElement('p');
+        dateElement.textContent = date.toDateString();
+
+        const temperatureElement = document.createElement('p');
+        temperatureElement.textContent = `Temperature: ${forecast.main.temp}°F`;
+
+        const humidityElement = document.createElement('p');
+        humidityElement.textContent = `Humidity: ${forecast.main.humidity}%`;
+
+        const descriptionElement = document.createElement('p');
+        descriptionElement.textContent = `Description: ${forecast.weather[0].description}`;
+
+        card.appendChild(dateElement);
+        card.appendChild(temperatureElement);
+        card.appendChild(humidityElement);
+        card.appendChild(descriptionElement);
+
+        predictedWeatherContainer.appendChild(card);
     }
 }
-
-function displayWeather(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', capitalizeFirst(desc));
-    captionDesc.textContent = `${capitalizeFirst(desc)}`;
-}
-
-// 3 Day weather forecast creation
-async function forecastFetch() {
-    try {
-        const response = await fetch(forecastURL);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data);
-            displayForecast(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-function formatDate(date){
-    return date.substring(6, 11).replace(/-/g, '/')
-}
-
-function displayForecast(data){
-    let time = new Date(data.list[0].dt);
-
-    day1Forcast.innerHTML = `${data.list[0].main.temp}&deg;F`;
-    day1ForcastDate.innerHTML = `${formatDate(data.list[0].dt_txt)}`;
-
-    day2Forcast.innerHTML = `${data.list[8].main.temp}&deg;F`;
-    day2ForcastDate.innerHTML = `${formatDate(data.list[8].dt_txt)}`;
-
-    day3Forcast.innerHTML = `${data.list[16].main.temp}&deg;F`;
-    day3ForcastDate.innerHTML = `${formatDate(data.list[16].dt_txt)}`;
-
-    day4Forcast.innerHTML = `${data.list[24].main.temp}&deg;F`;
-    day4ForcastDate.innerHTML = `${formatDate(data.list[24].dt_txt)}`;
-}
-
-
-function capitalizeFirst(str){
-    const arr = str.split(" ");
-    for (var i = 0; i < arr.length; i++) {
-        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    
-    }
-    const str2 = arr.join(" ");
-    return str2;
-}
-
-weatherFetch();
-forecastFetch();
